@@ -31,18 +31,20 @@ const validarCuenta = async (req, res) => {
       console.log(resDatosCuenta);
       return res.status(400).json(resDatosCuenta);
     }
-    console.log(resDatosCuenta);
-    return res.status(200).json(resDatosCuenta);
-    const obtenerEmail = await obtenerEmailCuentaServicio(access_token);
-    if (obtenerEmail?.status !== 200) {
-      return res.status(400).json(obtenerEmail);
-    }
+    // console.log(resDatosCuenta);
+    // return res.status(200).json(resDatosCuenta);
+    // const obtenerEmail = await obtenerEmailCuentaServicio(access_token);
+    // if (obtenerEmail?.status !== 200) {
+    //   return res.status(400).json(obtenerEmail);
+    // }
     const infoCuenta = {
       IdGitHub: resDatosCuenta.data.perfil.id,
-      login: resDatosCuenta.data.perfil.login,
+      login: resDatosCuenta.data.perfil.name,
       name: resDatosCuenta.data.perfil.name,
-      email: obtenerEmail.data.perfil[0].email,
+      email: resDatosCuenta.data.perfil.email,
     };
+    // console.log(infoCuenta);
+    // return res.status(200).json(infoCuenta);
     // Validar si ya existe en la bd
     const verificarSiExisteUserBD =
       await verificarExisteUsuarioIdGitHubServicio(infoCuenta.IdGitHub);

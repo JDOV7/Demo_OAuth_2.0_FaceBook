@@ -15,15 +15,15 @@ const CrearCuenta = () => {
     <>
       <section className="bg-slate-100 ">
         <div className="justify-center items-center text-center pt-2">
-          <h1 className="text-4xl text-purple-700 font-mono font-semibold">
+          <h1 className="text-4xl text-blue-700 font-mono font-semibold">
             OAuth 2.0
             <span className="text-3xl text-gray-900 font-sans text-center">
               {" "}
               y{" "}
             </span>
-            <span className="text-5xl text-gray-900 font-sans font-extrabold">
+            <a href="/" className="text-5xl text-gray-900 font-sans font-extrabold">
               FaceBook
-            </span>{" "}
+            </a>{" "}
           </h1>
         </div>
         <div className="justify-center items-center text-center pt-6 pb-5">

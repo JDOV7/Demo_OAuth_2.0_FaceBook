@@ -5,7 +5,7 @@ const LandingPage = () => {
     <>
       <section className="bg-slate-100  w-full  lg:fixed h-full">
         <div className="justify-center items-center text-left p-8">
-          <h1 className="text-4xl text-purple-700 font-mono font-semibold">
+          <h1 className="text-4xl text-blue-700 font-mono font-semibold">
             OAuth 2.0
             <span className="text-3xl text-gray-900 font-sans text-center">
               {" "}
@@ -23,7 +23,7 @@ const LandingPage = () => {
               <div className="p-8">
                 <h2 className="text-3xl text-gray-900 font-sans text-center">
                   ¡Bienvenido a la Demo de Autenticación con{" "}
-                  <span className="text-4xl text-purple-700 font-mono font-semibold">
+                  <span className="text-4xl text-blue-700 font-mono font-semibold">
                     FaceBook
                   </span>
                   !

@@ -87,6 +87,7 @@ const obtenerEmailCuentaServicio = async (access_token = "") => {
 const obtenerPermiso = async (token = "") => {
   try {
     const decodificando = jwt.verify(token, process.env.JWT_SECRET);
+    console.log(decodificando);
     if (!decodificando) {
       throw new Error("");
     }

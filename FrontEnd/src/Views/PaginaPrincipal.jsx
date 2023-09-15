@@ -60,6 +60,7 @@ const PaginaPrincipal = () => {
             setCode(200);
             setInfoCuenta({ login: data?.data?.usuario?.login });
             setProductos(data?.data?.productos);
+            console.log(data?.data?.productos);
             console.log(data?.data?.token);
             console.log(data?.data?.usuario?.login);
 
